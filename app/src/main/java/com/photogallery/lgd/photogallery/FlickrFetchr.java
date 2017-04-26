@@ -126,6 +126,7 @@ public class FlickrFetchr {
             }
 
             item.setUrl(photoJsonObject.getString("url_s"));
+            item.setOwner(photoJsonObject.getString("owner"));//从JSON数据中获取owner属性
             items.add(item);
         }
     }
